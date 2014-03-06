@@ -1,0 +1,475 @@
+{
+  "id" : "netty-http-pipelining",
+  "variants" : [ "c45918ea14b23e87f87a518fc03bd2c5a39e513b8222fdf8f8886ab0098f0371", "da0b463c7900619736299755f9b40ddcf02d94b1d1ebd7cebf0d2637c3503d54", "ea1da83c98baf6af645cf055eac0398c30be467d4550eca5a116c8f229dfa20a", "5848eb19569a74b72e93c3f872e346000f6ca31f20be9e3579bd8ef3f0e18be3", "25663dfa0daa3b780f8458d8af6ce5fa0c7ba05e93d6d4305b77924fb282b3db", "59ae997052be52bde538e69d3cc4cdd7d8f69fd60b0c76267c838b79c66ac7e6", "ea8cb2f9f45c50e5513830d907e3c86a3a287de3aca7c26033960f6de4c2aa65", "119da64937c02f09f9b072ef9348339f763603b5e2cd4e9ce741fe7b3bfcbbca", "89525a6c5ca4bf47841927fb334079c5e064adb05c1f155577679b97e74ba2a2", "00f81180ff9f020673666528341a7d05c03f7df593a202c3b85051f2857dca05", "f797a1680b374656ed789b3325f437382aa44f087875c358ef1c2209265b0b52" ],
+  "configurations" : [ {
+    "id" : "test",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "provided",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "system",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "master",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "optional",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "compile",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "default",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "sources",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "javadoc",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  }, {
+    "id" : "runtime",
+    "repositories" : [ {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "c055011e66679c1ee1bb5eb6a27e595f02816fc5"
+    } ]
+  } ]
+}

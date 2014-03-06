@@ -1,0 +1,172 @@
+{
+  "id" : "netty-http-pipelining",
+  "info" : { },
+  "attributes" : {
+    "organization" : [ "com.typesafe.netty" ],
+    "name" : [ "netty-http-pipelining" ],
+    "version" : [ "1.1.2" ]
+  },
+  "configurations" : [ {
+    "id" : "compile",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "compile", "master" ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "javadoc",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "system",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "sources",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "master",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ {
+      "hash" : "8cefa7a3fbaccaa7d29335a3a07a3612761369e97b928de1d1315b4f6d691818",
+      "attributes" : {
+        "configurations" : [ "master" ]
+      },
+      "filename" : "netty-http-pipelining-1.1.2.jar"
+    } ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "provided",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "test",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "optional",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "default",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ {
+      "hash" : "8cefa7a3fbaccaa7d29335a3a07a3612761369e97b928de1d1315b4f6d691818",
+      "attributes" : {
+        "configurations" : [ "master" ]
+      },
+      "filename" : "netty-http-pipelining-1.1.2.jar"
+    } ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "runtime",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.typesafe.netty" ],
+      "name" : [ "netty-http-pipelining" ],
+      "version" : [ "1.1.2" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    } ]
+  } ]
+}
